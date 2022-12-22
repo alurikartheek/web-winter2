@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My page Title</title>
-		<style>
-			/* this is where we write CSS(Cascading stylesheet)-notice ,my comment notation is different */
-        table {
-			border-collapse: collapse;
-			/* width: 500px; statsic style  */
-			width: 50%;
-		}
-
-		th,
-		td{
-			border: 1px solid black;
-		}
-			
-
-		</style>
+		<title>My Page Title</title>
 	</head>
 
 	<body>
 		<main>
-			<!----kartheek is the comment for HTMl(ctrl +/)-->
-			<!-- using proper html tags will provide semantic 
-                meaning(semantic html)-this will help screen readers&
-                 disabled audiences when using your site-->
+			<head>
+				<title>My page title</title>
+				<link rel=""stylesheet
+			</head>
+			<!-- This is the comment notation for HTML (ctrl + /) -->
+			<!-- using proper html tags will provide semantic meaning (semantic html) - this will help screen readers & disabled audiences when using your site -->
+			<h1 id="first-h1">This is heading 1</h1>
 			<h1>This is heading 1</h1>
+			<h2>This is heading 2 that comes after an H1</h2>
 			<h2>This is heading 2</h2>
+			<h3 class="text-red">This is red heading 3</h3>
+			<h3 class="text-green text-red">This is red heading 3</h3>
 			<h3>This is heading 3</h3>
-			<h4>This is heading 4</h4>
+			<h4 class="pink-text">This is heading 4</h4>
 			<h5>This is heading 5</h5>
+			<h6 class="text-green" id="text-orange" style="color: cornflowerblue !important">This is heading 6</h6>
 
-			<!---Adding style "attribute" to my para tag-->
+			<!-- Adding style "attribute" to my paragraph tag -->
+			<p style="color: red">This is a paragraph</p>
+			<!-- <b> is just a styling tag (bold) & slightly different semantic meaning, <strong> provides both styling & semantic meaning of high importance -->
+			<p class="pink-text">
+				<strong>This is a strong paragraph</strong>
+				This part of the paragraph is not strong.
+			</p>
 
-			<p style="color: green">this is a paragraph</p>
+			<p>
+				<em>This is a emphasized paragraph</em>
+				This part of the paragraph is emphasized.
+			</p>
 
-			<!--<b> is juststyling tag (bold) & slightly different semantic meaning, <strong> provides both styling &
-				semantic meaning of high importance-->
-				<p1>
-					<strong>THIS IS A SRTRONG LINE</strong>
-					This is not the paragraph ata all.
-				</p1>
+			<!-- <a> tags are anchor tags -->
+			<a href="https://www.google.com" target="_blank" style="color: blue">Google</a>
 
-				<p>
-					<em>This is a emphasized paragraph</em>
-					This part of the pRAGraph is emaphasized.
-				</p>
+			<!-- <img src="" alt="logo" width="" height="" /> -->
 
-				<!--<a> tags are anchor tags-->
-				<a href="https://www.google.com" target="_blank" style="color: yellow ">google</a>
+			<div>
+				<h2>H2 in Div</h2>
+				<ul>
+					<p>Paragraph as immediate child of UL will be brown</p>
+					<div>
+						<p>Paragraph 1 in UL</p>
+						<p>Paragraph 2 in UL</p>
+						<p>Paragraph 3 in UL</p>
+					</div>
+				</ul>
+				<p>Paragraph outside of UL</p>
+			</div>
 
-				<!--<img src="" alt="logo" width="" height="" />-->
+			<table>
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Contact</th>
+						<th>Country</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Albertson</td>
+						<td>Alfred</td>
+						<td>USA</td>
+					</tr>
+					<tr>
+						<td>Amazon</td>
+						<td>Anne</td>
+						<td>USA</td>
+					</tr>
+					<tr>
+						<td>Target</td>
+						<td>Lucy</td>
+						<td>USA</td>
+					</tr>
+				</tbody>
+			</table>
 
-				<table>
-					<thread>
-						<tr>
-							<th>Company</th>
-							<th>contract</th>
-							<th>country</th>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+				<li>React</li>
+			</ul>
 
-						</tr>
-					</thread>
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+				<li>React</li>
+			</ol>
 
-					<tbody>
-						<tr>
-							<td>Alberston</td>
-							<td>Kartheek</td>
-							<td>USA</td>
-						</tr>
-						<tr>
-							<td>Amazon</td>
-							<td>bala</td>
-							<td>usa</td>
-						</tr>
-						<tr>
-							<td>Target</td>
-							<td>Naga</td>
-							<td>usa</td>
-						</tr>
-					</tbody>
-
-                
-				</table>
-
-
-
-				</main>
+			<div class="box1">Box 1</div>
+			<div class="box1">Box 2</div>
+			<p>The quick brown fox jumped over the lazy dog</p>
 		</main>
 	</body>
 </html>
